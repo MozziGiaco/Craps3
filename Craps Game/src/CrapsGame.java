@@ -67,4 +67,9 @@ public class CrapsGame
 				System.out.println("Let's play a game of Craps!");
 			}
 
+		public static void firstRoll()
+			{
+				
+			}
+
 	}
