@@ -5,12 +5,8 @@ public class CrapsGame
 
 		public static void main(String[] args)
 			{
-				Scanner userInput = new Scanner(System.in);
 
-				System.out.println("What is your name?");
-				String name = userInput.nextLine();
-
-				System.out.println("Let's play a game of Craps!");
+				greetPlayer();
 
 				System.out.println("Take your first roll");
 				int firstRoll = (int) (Math.random() * 6 + 1);
@@ -35,7 +31,7 @@ public class CrapsGame
 				boolean stillRolling = true;
 				while (stillRolling)
 					{
-						String roll = userInput.nextLine();
+						// String roll = userInput.nextLine();
 
 						int thirdRoll = (int) (Math.random() * 6 + 1);
 						int fourthRoll = (int) (Math.random() * 6 + 1);
@@ -59,6 +55,16 @@ public class CrapsGame
 
 					}
 
+			}
+
+		public static void greetPlayer()
+			{
+				Scanner userInput = new Scanner(System.in);
+
+				System.out.println("What is your name?");
+				String name = userInput.nextLine();
+
+				System.out.println("Let's play a game of Craps!");
 			}
 
 	}
